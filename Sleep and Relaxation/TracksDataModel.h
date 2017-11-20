@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AudioTracks.h"
 
 @interface TracksDataModel : NSObject
+
+@property(strong,atomic) NSMutableArray *fireAudioTracks;
 
 @end
