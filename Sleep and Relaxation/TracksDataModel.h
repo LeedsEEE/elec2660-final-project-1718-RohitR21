@@ -10,7 +10,7 @@
 #import "AudioTracks.h"
 
 @interface TracksDataModel : NSObject
-
+//Array to store track information.
 @property(strong,atomic) NSMutableArray *fireAudioTracks;
 
 @end

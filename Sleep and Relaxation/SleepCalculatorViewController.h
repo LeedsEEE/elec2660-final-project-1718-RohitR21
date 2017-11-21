@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SleepCalculatorViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIDatePicker *wakePicker;
 
+- (IBAction)calcBedTime:(UIButton *)sender;
 @end
