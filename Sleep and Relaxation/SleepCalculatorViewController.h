@@ -10,6 +10,7 @@
 
 @interface SleepCalculatorViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIDatePicker *wakePicker;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 - (IBAction)calcBedTime:(UIButton *)sender;
 @end

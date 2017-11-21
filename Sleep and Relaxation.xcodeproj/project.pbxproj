@@ -11,7 +11,6 @@
 		B79A0DA71FC2E19D00969560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DA61FC2E19D00969560 /* main.m */; };
 		B79A0DAA1FC2E19D00969560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DA91FC2E19D00969560 /* AppDelegate.m */; };
 		B79A0DB31FC2E19D00969560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB11FC2E19D00969560 /* Main.storyboard */; };
-		B79A0DB51FC2E19D00969560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB41FC2E19D00969560 /* Assets.xcassets */; };
 		B79A0DB81FC2E19D00969560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB61FC2E19D00969560 /* LaunchScreen.storyboard */; };
 		B79A0DC31FC2E19D00969560 /* Sleep_and_RelaxationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DC21FC2E19D00969560 /* Sleep_and_RelaxationTests.m */; };
 		B79A0DCE1FC2E19D00969560 /* Sleep_and_RelaxationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DCD1FC2E19D00969560 /* Sleep_and_RelaxationUITests.m */; };
@@ -22,6 +21,7 @@
 		B79A0DE91FC2EE8F00969560 /* WhiteNoiseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DE81FC2EE8F00969560 /* WhiteNoiseTableViewController.m */; };
 		B79A0DEC1FC2F50800969560 /* AudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEB1FC2F50800969560 /* AudioTracks.m */; };
 		B79A0DEF1FC2F74F00969560 /* TracksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */; };
+		F9C761001FC452C9007DCE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C760FF1FC452C9007DCE56 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		B79A0DA81FC2E19D00969560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B79A0DA91FC2E19D00969560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B79A0DB21FC2E19D00969560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B79A0DB41FC2E19D00969560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79A0DB71FC2E19D00969560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79A0DB91FC2E19D00969560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79A0DBE1FC2E19D00969560 /* Sleep and RelaxationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep and RelaxationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +69,7 @@
 		B79A0DEB1FC2F50800969560 /* AudioTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTracks.m; sourceTree = "<group>"; };
 		B79A0DED1FC2F74F00969560 /* TracksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksDataModel.h; sourceTree = "<group>"; };
 		B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksDataModel.m; sourceTree = "<group>"; };
+		F9C760FF1FC452C9007DCE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +138,8 @@
 				B79A0DE21FC2E97D00969560 /* SleepCalculatorViewController.m */,
 				B79A0DB11FC2E19D00969560 /* Main.storyboard */,
 				B78B5F0E1FC30F5D00A4D503 /* SleepCalculator Images */,
-				B79A0DB41FC2E19D00969560 /* Assets.xcassets */,
 				B79A0DB61FC2E19D00969560 /* LaunchScreen.storyboard */,
+				F9C760FF1FC452C9007DCE56 /* Assets.xcassets */,
 				B79A0DB91FC2E19D00969560 /* Info.plist */,
 				B79A0DA51FC2E19D00969560 /* Supporting Files */,
 			);
@@ -287,8 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79A0DB81FC2E19D00969560 /* LaunchScreen.storyboard in Resources */,
-				B79A0DB51FC2E19D00969560 /* Assets.xcassets in Resources */,
 				B79A0DB31FC2E19D00969560 /* Main.storyboard in Resources */,
+				F9C761001FC452C9007DCE56 /* Assets.xcassets in Resources */,
 				B78B5F0F1FC30F5D00A4D503 /* SleepCalculator Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

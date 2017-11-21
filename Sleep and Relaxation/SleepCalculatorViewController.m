@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIColor imageNamed ]]
-    
+   // self.imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning {
