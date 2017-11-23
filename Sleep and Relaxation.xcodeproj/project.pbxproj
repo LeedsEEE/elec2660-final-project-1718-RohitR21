@@ -22,6 +22,7 @@
 		B79A0DEC1FC2F50800969560 /* AudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEB1FC2F50800969560 /* AudioTracks.m */; };
 		B79A0DEF1FC2F74F00969560 /* TracksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */; };
 		F9C761001FC452C9007DCE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C760FF1FC452C9007DCE56 /* Assets.xcassets */; };
+		F9D00D711FC6F51C00E25989 /* MusicControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		B79A0DED1FC2F74F00969560 /* TracksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksDataModel.h; sourceTree = "<group>"; };
 		B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksDataModel.m; sourceTree = "<group>"; };
 		F9C760FF1FC452C9007DCE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D00D6F1FC6F51C00E25989 /* MusicControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicControlViewController.h; sourceTree = "<group>"; };
+		F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicControlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				B79A0DA91FC2E19D00969560 /* AppDelegate.m */,
 				B79A0DED1FC2F74F00969560 /* TracksDataModel.h */,
 				B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */,
+				F9D00D6F1FC6F51C00E25989 /* MusicControlViewController.h */,
+				F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */,
 				B79A0DDE1FC2E95300969560 /* FireTableViewController.h */,
 				B79A0DDF1FC2E95300969560 /* FireTableViewController.m */,
 				B79A0DEA1FC2F50800969560 /* AudioTracks.h */,
@@ -314,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D00D711FC6F51C00E25989 /* MusicControlViewController.m in Sources */,
 				B79A0DEC1FC2F50800969560 /* AudioTracks.m in Sources */,
 				B79A0DE91FC2EE8F00969560 /* WhiteNoiseTableViewController.m in Sources */,
 				B79A0DE31FC2E97D00969560 /* SleepCalculatorViewController.m in Sources */,

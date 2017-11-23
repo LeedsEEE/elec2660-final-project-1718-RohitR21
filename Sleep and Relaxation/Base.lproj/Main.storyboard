@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ggu-en-0X4">
+            <objects>
+                <navigationController id="IZ7-Qo-9dD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="228-QO-cFL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uYr-qC-gu5" kind="relationship" relationship="rootViewController" id="xaA-id-T2z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cS9-S1-lkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="-887"/>
+        </scene>
         <!--Fire-->
         <scene sceneID="hVm-3s-mx9">
             <objects>
@@ -20,7 +36,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="6Jy-v8-RTX" style="IBUITableViewCellStyleDefault" id="LlZ-Ci-ayT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" textLabel="6Jy-v8-RTX" style="IBUITableViewCellStyleDefault" id="LlZ-Ci-ayT">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LlZ-Ci-ayT" id="QG7-ax-5Hq">
@@ -37,7 +53,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="lKL-PX-Yaq" kind="show" id="2lJ-eO-ZNw"/>
+                                    <segue destination="lKL-PX-Yaq" kind="show" identifier="showTrackView" id="2lJ-eO-ZNw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -47,15 +63,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Fire" id="h77-am-G0T"/>
+                    <navigationItem key="navigationItem" id="WfV-1P-QkT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HZ-xs-YSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="-587"/>
+            <point key="canvasLocation" x="1582" y="-887"/>
         </scene>
-        <!--View Controller-->
+        <!--Music Control View Controller-->
         <scene sceneID="5rX-85-ghK">
             <objects>
-                <viewController id="lKL-PX-Yaq" sceneMemberID="viewController">
+                <viewController id="lKL-PX-Yaq" customClass="MusicControlViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bgd-Y1-VAL"/>
                         <viewControllerLayoutGuide type="bottom" id="EAd-ls-KU0"/>
@@ -69,13 +86,59 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZfU-38-qvt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkF-IJ-ZjG">
+                                <rect key="frame" x="173" y="568" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButton:" destination="lKL-PX-Yaq" eventType="touchUpInside" id="2BV-uL-op2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4V-sa-9cB">
+                                <rect key="frame" x="224" y="568" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forward"/>
+                                <connections>
+                                    <action selector="forwardButton:" destination="lKL-PX-Yaq" eventType="touchUpInside" id="df0-Cc-cuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihQ-rz-c7T">
+                                <rect key="frame" x="95" y="568" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rewind"/>
+                                <connections>
+                                    <action selector="rewindButton:" destination="lKL-PX-Yaq" eventType="touchUpInside" id="r97-3q-tCr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-0f-jm7">
+                                <rect key="frame" x="313" y="568" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Loop"/>
+                                <connections>
+                                    <action selector="loopButton:" destination="lKL-PX-Yaq" eventType="touchUpInside" id="mQk-Ay-dXe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-zb-IPW">
+                                <rect key="frame" x="16" y="472" width="343" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="trackLabel" destination="c4W-zb-IPW" id="9SS-qR-HNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0q-Fc-7dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="-723"/>
+            <point key="canvasLocation" x="2589.5999999999999" y="-886.50674662668678"/>
         </scene>
         <!--Sleep Calculator-->
         <scene sceneID="E0o-Df-rQB">
@@ -275,4 +338,7 @@
     <resources>
         <image name="MoonNight-1" width="539" height="724"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dfr-lQ-Cls"/>
+    </inferredMetricsTieBreakers>
 </document>

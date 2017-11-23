@@ -55,14 +55,14 @@
         fire8.trackName = @"track 8";
         
         //Add to array code:
-        [self.fireAudioTracks addObject:fire];
-        [self.fireAudioTracks addObject:fire2];
-        [self.fireAudioTracks addObject:fire3];
-        [self.fireAudioTracks addObject:fire4];
-        [self.fireAudioTracks addObject:fire5];
-        [self.fireAudioTracks addObject:fire6];
-        [self.fireAudioTracks addObject:fire7];
-        [self.fireAudioTracks addObject:fire8];
+        [self.fireAudioTracks addObject:fire];  //index 0
+        [self.fireAudioTracks addObject:fire2]; //index 1
+        [self.fireAudioTracks addObject:fire3]; //index 2
+        [self.fireAudioTracks addObject:fire4]; //index 3
+        [self.fireAudioTracks addObject:fire5]; //index 4
+        [self.fireAudioTracks addObject:fire6]; //index 5
+        [self.fireAudioTracks addObject:fire7]; //index 6
+        [self.fireAudioTracks addObject:fire8]; //index 7
         
     }
     return self;

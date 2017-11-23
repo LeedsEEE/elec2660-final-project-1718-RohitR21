@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "TracksDataModel.h"
+#import "MusicControlViewController.h" //imported to create a local MuiscControlViewController copy.
 
 @interface FireTableViewController : UITableViewController
-
+//data model object created to access track information from tracks data model.
+@property (strong,nonatomic) TracksDataModel *data;
 
 
 
