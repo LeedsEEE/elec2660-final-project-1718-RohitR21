@@ -19,7 +19,7 @@
 
 //to display the data recieved:
 @property (strong,nonatomic) AudioTracks *audiotracks;
-
+@property (strong,nonatomic) AudioTracks *waterAudiotracks;
 
 
 @end

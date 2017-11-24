@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //To access data from waterDataModel:
+    self.data = [[WaterTracksDataModel alloc]init];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,24 +35,36 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+//#warning Incomplete implementation, return the number of sections
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+//#warning Incomplete implementation, return the number of rows
+    NSInteger numberOfRows;
+    if (section ==0) {
+        numberOfRows = self.data.waterAudioTracks.count; //Returns however number of rows/tracks there are for water.
+    }
+    
+    return numberOfRows;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"waterTrackCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    if (indexPath.section ==0) {
+        AudioTracks *waterTempAudio = [self.data.waterAudioTracks objectAtIndex:indexPath.row];
+        
+        //Configure track names from datamodel to TableViewController
+        cell.textLabel.text = waterTempAudio.trackName;
+    }
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -85,14 +100,28 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    //To push data to musicViewController
+    if ([[segue identifier]isEqualToString:@"showTrackView"]) {
+        MusicControlViewController *destViewController = [segue destinationViewController]; //move data using local musiccontrolViewController.
+        
+        //index path used to get correct track infromation for each respective track.
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        if (indexPath.section ==0) {
+            AudioTracks *tempWaterTracks = [self.data.waterAudioTracks objectAtIndex:indexPath.row];
+            destViewController.audiotracks = tempWaterTracks; //set temp audiotrack in musicControlViewController.
+        }
+        
+    }
+    
 }
-*/
+
 
 @end

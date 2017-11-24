@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "MusicControlViewController.h"
+#import "WaterTracksDataModel.h"
 
 @interface WaterTableViewController : UITableViewController
+
+@property (strong,nonatomic) WaterTracksDataModel *data;
+
 
 @end

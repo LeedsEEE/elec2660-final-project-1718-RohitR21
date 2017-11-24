@@ -17,8 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    //To change background colour for the fire tab.
-    self.tableView.backgroundColor = [UIColor blueColor];
-   
+ //  self.tableView.backgroundColor = [UIColor blueColor];
+  
+  /*   self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.opaque = NO;
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"moonnight.png"]]; */
+
     //To access data from tracksdatamodel.
     self.data = [[TracksDataModel alloc]init];
     
