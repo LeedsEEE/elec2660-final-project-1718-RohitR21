@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B78B5F0F1FC30F5D00A4D503 /* SleepCalculator Images in Resources */ = {isa = PBXBuildFile; fileRef = B78B5F0E1FC30F5D00A4D503 /* SleepCalculator Images */; };
 		B79A0DA71FC2E19D00969560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DA61FC2E19D00969560 /* main.m */; };
 		B79A0DAA1FC2E19D00969560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DA91FC2E19D00969560 /* AppDelegate.m */; };
-		B79A0DAD1FC2E19D00969560 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DAC1FC2E19D00969560 /* FirstViewController.m */; };
-		B79A0DB01FC2E19D00969560 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DAF1FC2E19D00969560 /* SecondViewController.m */; };
 		B79A0DB31FC2E19D00969560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB11FC2E19D00969560 /* Main.storyboard */; };
-		B79A0DB51FC2E19D00969560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB41FC2E19D00969560 /* Assets.xcassets */; };
 		B79A0DB81FC2E19D00969560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79A0DB61FC2E19D00969560 /* LaunchScreen.storyboard */; };
 		B79A0DC31FC2E19D00969560 /* Sleep_and_RelaxationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DC21FC2E19D00969560 /* Sleep_and_RelaxationTests.m */; };
 		B79A0DCE1FC2E19D00969560 /* Sleep_and_RelaxationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DCD1FC2E19D00969560 /* Sleep_and_RelaxationUITests.m */; };
+		B79A0DDD1FC2E69200969560 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79A0DDC1FC2E69200969560 /* AVFoundation.framework */; };
+		B79A0DE01FC2E95300969560 /* FireTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DDF1FC2E95300969560 /* FireTableViewController.m */; };
+		B79A0DE31FC2E97D00969560 /* SleepCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DE21FC2E97D00969560 /* SleepCalculatorViewController.m */; };
+		B79A0DE61FC2EE4A00969560 /* WaterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DE51FC2EE4A00969560 /* WaterTableViewController.m */; };
+		B79A0DE91FC2EE8F00969560 /* WhiteNoiseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DE81FC2EE8F00969560 /* WhiteNoiseTableViewController.m */; };
+		B79A0DEC1FC2F50800969560 /* AudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEB1FC2F50800969560 /* AudioTracks.m */; };
+		B79A0DEF1FC2F74F00969560 /* TracksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */; };
+		F9C761001FC452C9007DCE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C760FF1FC452C9007DCE56 /* Assets.xcassets */; };
+		F9D00D711FC6F51C00E25989 /* MusicControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */; };
+		F9D2D9641FC754FA005B0459 /* WaterTracksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D2D9631FC754FA005B0459 /* WaterTracksDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B78B5F0E1FC30F5D00A4D503 /* SleepCalculator Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SleepCalculator Images"; sourceTree = "<group>"; };
 		B79A0DA21FC2E19D00969560 /* Sleep and Relaxation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep and Relaxation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79A0DA61FC2E19D00969560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B79A0DA81FC2E19D00969560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B79A0DA91FC2E19D00969560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B79A0DAB1FC2E19D00969560 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B79A0DAC1FC2E19D00969560 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B79A0DAE1FC2E19D00969560 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B79A0DAF1FC2E19D00969560 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B79A0DB21FC2E19D00969560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B79A0DB41FC2E19D00969560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79A0DB71FC2E19D00969560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79A0DB91FC2E19D00969560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79A0DBE1FC2E19D00969560 /* Sleep and RelaxationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep and RelaxationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,24 @@
 		B79A0DC91FC2E19D00969560 /* Sleep and RelaxationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep and RelaxationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79A0DCD1FC2E19D00969560 /* Sleep_and_RelaxationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sleep_and_RelaxationUITests.m; sourceTree = "<group>"; };
 		B79A0DCF1FC2E19D00969560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79A0DDC1FC2E69200969560 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B79A0DDE1FC2E95300969560 /* FireTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireTableViewController.h; sourceTree = "<group>"; };
+		B79A0DDF1FC2E95300969560 /* FireTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireTableViewController.m; sourceTree = "<group>"; };
+		B79A0DE11FC2E97D00969560 /* SleepCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepCalculatorViewController.h; sourceTree = "<group>"; };
+		B79A0DE21FC2E97D00969560 /* SleepCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepCalculatorViewController.m; sourceTree = "<group>"; };
+		B79A0DE41FC2EE4A00969560 /* WaterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterTableViewController.h; sourceTree = "<group>"; };
+		B79A0DE51FC2EE4A00969560 /* WaterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterTableViewController.m; sourceTree = "<group>"; };
+		B79A0DE71FC2EE8F00969560 /* WhiteNoiseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteNoiseTableViewController.h; sourceTree = "<group>"; };
+		B79A0DE81FC2EE8F00969560 /* WhiteNoiseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteNoiseTableViewController.m; sourceTree = "<group>"; };
+		B79A0DEA1FC2F50800969560 /* AudioTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTracks.h; sourceTree = "<group>"; };
+		B79A0DEB1FC2F50800969560 /* AudioTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTracks.m; sourceTree = "<group>"; };
+		B79A0DED1FC2F74F00969560 /* TracksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksDataModel.h; sourceTree = "<group>"; };
+		B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksDataModel.m; sourceTree = "<group>"; };
+		F9C760FF1FC452C9007DCE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D00D6F1FC6F51C00E25989 /* MusicControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicControlViewController.h; sourceTree = "<group>"; };
+		F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicControlViewController.m; sourceTree = "<group>"; };
+		F9D2D9621FC754F9005B0459 /* WaterTracksDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterTracksDataModel.h; sourceTree = "<group>"; };
+		F9D2D9631FC754FA005B0459 /* WaterTracksDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterTracksDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79A0DDD1FC2E69200969560 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +111,7 @@
 				B79A0DC11FC2E19D00969560 /* Sleep and RelaxationTests */,
 				B79A0DCC1FC2E19D00969560 /* Sleep and RelaxationUITests */,
 				B79A0DA31FC2E19D00969560 /* Products */,
+				B79A0DDB1FC2E69200969560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,13 +130,26 @@
 			children = (
 				B79A0DA81FC2E19D00969560 /* AppDelegate.h */,
 				B79A0DA91FC2E19D00969560 /* AppDelegate.m */,
-				B79A0DAB1FC2E19D00969560 /* FirstViewController.h */,
-				B79A0DAC1FC2E19D00969560 /* FirstViewController.m */,
-				B79A0DAE1FC2E19D00969560 /* SecondViewController.h */,
-				B79A0DAF1FC2E19D00969560 /* SecondViewController.m */,
+				B79A0DEA1FC2F50800969560 /* AudioTracks.h */,
+				B79A0DEB1FC2F50800969560 /* AudioTracks.m */,
+				F9D00D6F1FC6F51C00E25989 /* MusicControlViewController.h */,
+				F9D00D701FC6F51C00E25989 /* MusicControlViewController.m */,
+				B79A0DED1FC2F74F00969560 /* TracksDataModel.h */,
+				B79A0DEE1FC2F74F00969560 /* TracksDataModel.m */,
+				B79A0DDE1FC2E95300969560 /* FireTableViewController.h */,
+				B79A0DDF1FC2E95300969560 /* FireTableViewController.m */,
+				F9D2D9621FC754F9005B0459 /* WaterTracksDataModel.h */,
+				F9D2D9631FC754FA005B0459 /* WaterTracksDataModel.m */,
+				B79A0DE41FC2EE4A00969560 /* WaterTableViewController.h */,
+				B79A0DE51FC2EE4A00969560 /* WaterTableViewController.m */,
+				B79A0DE71FC2EE8F00969560 /* WhiteNoiseTableViewController.h */,
+				B79A0DE81FC2EE8F00969560 /* WhiteNoiseTableViewController.m */,
+				B79A0DE11FC2E97D00969560 /* SleepCalculatorViewController.h */,
+				B79A0DE21FC2E97D00969560 /* SleepCalculatorViewController.m */,
 				B79A0DB11FC2E19D00969560 /* Main.storyboard */,
-				B79A0DB41FC2E19D00969560 /* Assets.xcassets */,
+				B78B5F0E1FC30F5D00A4D503 /* SleepCalculator Images */,
 				B79A0DB61FC2E19D00969560 /* LaunchScreen.storyboard */,
+				F9C760FF1FC452C9007DCE56 /* Assets.xcassets */,
 				B79A0DB91FC2E19D00969560 /* Info.plist */,
 				B79A0DA51FC2E19D00969560 /* Supporting Files */,
 			);
@@ -143,6 +180,14 @@
 				B79A0DCF1FC2E19D00969560 /* Info.plist */,
 			);
 			path = "Sleep and RelaxationUITests";
+			sourceTree = "<group>";
+		};
+		B79A0DDB1FC2E69200969560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79A0DDC1FC2E69200969560 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79A0DB81FC2E19D00969560 /* LaunchScreen.storyboard in Resources */,
-				B79A0DB51FC2E19D00969560 /* Assets.xcassets in Resources */,
 				B79A0DB31FC2E19D00969560 /* Main.storyboard in Resources */,
+				F9C761001FC452C9007DCE56 /* Assets.xcassets in Resources */,
+				B78B5F0F1FC30F5D00A4D503 /* SleepCalculator Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79A0DB01FC2E19D00969560 /* SecondViewController.m in Sources */,
+				F9D00D711FC6F51C00E25989 /* MusicControlViewController.m in Sources */,
+				B79A0DEC1FC2F50800969560 /* AudioTracks.m in Sources */,
+				B79A0DE91FC2EE8F00969560 /* WhiteNoiseTableViewController.m in Sources */,
+				F9D2D9641FC754FA005B0459 /* WaterTracksDataModel.m in Sources */,
+				B79A0DE31FC2E97D00969560 /* SleepCalculatorViewController.m in Sources */,
 				B79A0DAA1FC2E19D00969560 /* AppDelegate.m in Sources */,
-				B79A0DAD1FC2E19D00969560 /* FirstViewController.m in Sources */,
+				B79A0DE01FC2E95300969560 /* FireTableViewController.m in Sources */,
 				B79A0DA71FC2E19D00969560 /* main.m in Sources */,
+				B79A0DE61FC2EE4A00969560 /* WaterTableViewController.m in Sources */,
+				B79A0DEF1FC2F74F00969560 /* TracksDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +565,7 @@
 				B79A0DD41FC2E19D00969560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B79A0DD51FC2E19D00969560 /* Build configuration list for PBXNativeTarget "Sleep and RelaxationTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +574,7 @@
 				B79A0DD71FC2E19D00969560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B79A0DD81FC2E19D00969560 /* Build configuration list for PBXNativeTarget "Sleep and RelaxationUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +583,7 @@
 				B79A0DDA1FC2E19D00969560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

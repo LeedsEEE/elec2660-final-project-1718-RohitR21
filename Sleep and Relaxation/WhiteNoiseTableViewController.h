@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  WhiteNoiseTableViewController.h
 //  Sleep and Relaxation
 //
 //  Created by Rohit Rajkotia [el16rr] on 20/11/2017.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface FirstViewController : UIViewController
-
+@interface WhiteNoiseTableViewController : UITableViewController
 
 @end
-
